@@ -8,7 +8,7 @@ Until now, analog button and screen display are simulated with pygame, but the O
 ## to-do:
 
 - scripts for analog buttons + screen display
-- .obj files for the clock housing
-- blueprints for rPico setup
+- .obj files to 3D print clcok housing
+- blueprints for rPico wiring
 - components list 
 
