@@ -64,15 +64,15 @@ class PygameDisplay:
         Shows each one of the game modes to be selected
         """
         # Fill background (black)
-        self.screen.fill(self.COLORS['sky'])
+        self.screen.fill(self.COLORS['white'])
 
         # Render text surfaces
         text_header = self.font.render("Select game mode:", True, self.COLORS['black'])
         text_surface = self.font.render(label, True, self.COLORS['black'])
 
         # Center text
-        text_rect_header = text_header.get_rect(center=(300, 50))
-        text_rect_surface = text_surface.get_rect(center=(300, 150))
+        text_rect_header = text_header.get_rect(center=(self.WIDTH/2, self.HEIGHT/4))
+        text_rect_surface = text_surface.get_rect(center=(self.WIDTH/2, self.HEIGHT/2))
 
         # Draw text
         self.screen.blit(text_header, text_rect_header)
