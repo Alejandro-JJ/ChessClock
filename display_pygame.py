@@ -5,7 +5,7 @@ class PygameDisplay:
               'black': (0, 0, 0),
               'white': (255, 255, 255),
               'sky': (204, 255, 255),
-              'grey': {168, 168, 168}}
+              'grey': (168, 168, 168)}
 
     WIDTH, HEIGHT = (600, 200)
     def __init__(self):
@@ -45,8 +45,8 @@ class PygameDisplay:
         self.screen.fill(self.COLORS['black'], (self.WIDTH/2, 0, self.WIDTH/2, self.HEIGHT))
 
         # Render text surface
-        text_surface_P1 = self.font.render(times[0], True, self.COLORS['grey'])
-        text_surface_P2 = self.font.render(times[1], True, self.COLORS['grey'])
+        text_surface_P1 = self.font.render(times[0], True, self.COLORS['black'])
+        text_surface_P2 = self.font.render(times[1], True, self.COLORS['white'])
 
         # Center text
         text_rect_P1 = text_surface_P1.get_rect(center=(self.WIDTH/4, self.HEIGHT/2))
